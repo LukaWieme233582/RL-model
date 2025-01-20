@@ -1,0 +1,78 @@
+C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\gymnasium\spaces\box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\gymnasium\spaces\box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+[2K---------------------------------━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4,034/1,000,000 [0m [ [33m0:00:01[0m < [36m0:08:03[0m , [31m2,064 it/s[0m ]
+| rollout/           |          |
+|    ep_len_mean     | 1e+03    |
+|    ep_rew_mean     | -24.3    |
+| time/              |          |
+|    fps             | 1990     |
+|    iterations      | 1        |
+|    time_elapsed    | 2        |
+|    total_timesteps | 4096     |
+---------------------------------
+[2K------------------------------------------;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7,923/1,000,000 [0m [ [33m0:00:04[0m < [36m0:09:59[0m , [31m1,656 it/s[0m ]
+| rollout/                |              |
+|    ep_len_mean          | 1e+03        |
+|    ep_rew_mean          | -23.5        |
+| time/                   |              |
+|    fps                  | 1644         |
+|    iterations           | 2            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0004912969 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -4.26        |
+|    explained_variance   | -0.0693      |
+|    learning_rate        | 0.0001       |
+|    loss                 | -0.00452     |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.000617    |
+|    std                  | 1            |
+|    value_loss           | 0.0278       |
+------------------------------------------
+[2KTraceback (most recent call last):[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+[2K  File "C:\Users\Beheerder\Documents\GitHub\RL-model\task9\task_11.py", line 43, in <module>━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    model.learn(total_timesteps=timesteps, callback=wandb_callback, progress_bar=True,
+reset_num_timesteps=False,tb_log_name=f"runs/{run.id}")
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\stable_baselines3\ppo\ppo.py", line 311, in learnm9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    return super().learn(
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line3/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+323, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line3/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+224, in collect_rollouts
+    if not callback.on_step():
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\stable_baselines3\common\callbacks.py", line 114, in 53/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+on_step
+    return self._on_step()
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\stable_baselines3\common\callbacks.py", line 223, in 53/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+_on_step
+    continue_training = callback.on_step() and continue_training
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\stable_baselines3\common\callbacks.py", line 114, in 53/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+on_step
+    return self._on_step()
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\wandb\integration\sb3\sb3.py", line 136, in _on_step853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    self.save_model()
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\wandb\integration\sb3\sb3.py", line 145, in save_model3/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    wandb.save(self.path, base_path=self.model_save_path)
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\wandb\sdk\wandb_run.py", line 393, in wrapper_fn2m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    return func(self, *args, **kwargs)
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\wandb\sdk\wandb_run.py", line 383, in wrapper[32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    return func(self, *args, **kwargs)
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\wandb\sdk\wandb_run.py", line 2008, in savem [32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    return self._save(
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\site-packages\wandb\sdk\wandb_run.py", line 2067, in _save [32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    target_path.symlink_to(source_path)
+[2K  File "C:\Users\Beheerder\anaconda3\envs\block_b_simulation\lib\pathlib.py", line 1255, in symlink_to━━━━━━━━━━━━━━━━━[0m [32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+    self._accessor.symlink(target, self, target_is_directory)
+[2KOSError: [WinError 1314] Een van de vereiste bevoegdheden is niet aan de client toegekend: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
+'C:\\Users\\Beheerder\\Documents\\GitHub\\RL-model\\task9\\models\\gcfi1p8x\\model.zip' ->
+'C:\\Users\\Beheerder\\Documents\\GitHub\\RL-model\\task9\\wandb\\run-20250120_131012-gcfi1p8x\\files\\model.zip'
+[35m   1%[0m [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9,853/1,000,000 [0m [ [33m0:00:06[0m < [36m0:11:04[0m , [31m1,492 it/s[0m ]
