@@ -27,6 +27,7 @@ model = PPO('MlpPolicy', env, verbose=1,
             gamma=args.gamma,
             n_steps= 4096,
             n_epochs=10,
+            tensorboard_log=f'runs/{run.id}'
             )
 
 wandb_callback = WandbCallback(

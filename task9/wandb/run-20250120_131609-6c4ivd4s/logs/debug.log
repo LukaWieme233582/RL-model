@@ -1,0 +1,160 @@
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_setup.py:_flush():68] Current SDK version is 0.19.3
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_setup.py:_flush():68] Configure stats pid to 1576
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Beheerder\.config\wandb\settings
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Beheerder\Documents\GitHub\RL-model\task9\wandb\settings
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_init.py:_log_setup():598] Logging user logs to C:\Users\Beheerder\Documents\GitHub\RL-model\task9\wandb\run-20250120_131609-6c4ivd4s\logs\debug.log
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_init.py:_log_setup():599] Logging internal logs to C:\Users\Beheerder\Documents\GitHub\RL-model\task9\wandb\run-20250120_131609-6c4ivd4s\logs\debug-internal.log
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_init.py:init():714] calling init triggers
+2025-01-20 13:16:09,978 INFO    MainThread:1576 [wandb_init.py:init():719] wandb.init called with sweep_config: {}
+config: {}
+2025-01-20 13:16:09,994 INFO    MainThread:1576 [wandb_init.py:init():745] starting backend
+2025-01-20 13:16:10,214 INFO    MainThread:1576 [wandb_init.py:init():749] sending inform_init request
+2025-01-20 13:16:10,245 INFO    MainThread:1576 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2025-01-20 13:16:10,257 INFO    MainThread:1576 [wandb_init.py:init():764] backend started and connected
+2025-01-20 13:16:10,260 INFO    MainThread:1576 [wandb_init.py:init():857] updated telemetry
+2025-01-20 13:16:10,325 INFO    MainThread:1576 [wandb_init.py:init():889] communicating run to backend with 90.0 second timeout
+2025-01-20 13:16:12,413 INFO    MainThread:1576 [wandb_init.py:init():941] starting run threads in backend
+2025-01-20 13:16:12,593 INFO    MainThread:1576 [wandb_run.py:_console_start():2420] atexit reg
+2025-01-20 13:16:12,593 INFO    MainThread:1576 [wandb_run.py:_redirect():2270] redirect: wrap_raw
+2025-01-20 13:16:12,593 INFO    MainThread:1576 [wandb_run.py:_redirect():2335] Wrapping output streams.
+2025-01-20 13:16:12,593 INFO    MainThread:1576 [wandb_run.py:_redirect():2360] Redirects installed.
+2025-01-20 13:16:12,594 INFO    MainThread:1576 [wandb_init.py:init():983] run started, returning control to user process
+2025-01-20 13:16:13,792 INFO    MainThread:1576 [wandb_run.py:_config_callback():1282] config_cb None None {'algo': 'PPO', 'policy_class': "<class 'stable_baselines3.common.policies.ActorCriticPolicy'>", 'device': 'cpu', 'verbose': 1, 'policy_kwargs': '{}', 'num_timesteps': 0, '_total_timesteps': 1000000, '_num_timesteps_at_start': 0, 'seed': 'None', 'action_noise': 'None', 'start_time': 1737375373776797300, 'learning_rate': 0.0001, 'tensorboard_log': 'None', '_last_obs': '[[0.073      0.0895     0.1195     0.12771854 0.06439136 0.27191326]]', '_last_episode_starts': '[ True]', '_last_original_obs': 'None', '_episode_num': 0, 'use_sde': 'False', 'sde_sample_freq': -1, '_current_progress_remaining': 1.0, '_stats_window_size': 100, 'ep_info_buffer': 'deque([], maxlen=100)', 'ep_success_buffer': 'deque([], maxlen=100)', '_n_updates': 0, '_custom_logger': 'False', 'env': '<stable_baselines3.common.vec_env.dummy_vec_env.DummyVecEnv object at 0x000002012677DED0>', '_vec_normalize_env': 'None', 'observation_space': 'Box([-1.927  -1.9105 -1.8805 -1.927  -1.9105 -1.8805], [2.073  2.0895 2.1195 2.073  2.0895 2.1195], (6,), float32)', 'action_space': 'Box(-1.0, 1.0, (3,), float32)', 'n_envs': 1, 'n_steps': 4096, 'gamma': 0.99, 'gae_lambda': 0.95, 'ent_coef': 0.0, 'vf_coef': 0.5, 'max_grad_norm': 0.5, 'rollout_buffer_class': "<class 'stable_baselines3.common.buffers.RolloutBuffer'>", 'rollout_buffer_kwargs': '{}', 'batch_size': 128, 'n_epochs': 10, 'clip_range': '<function get_schedule_fn.<locals>.<lambda> at 0x000002012FE21AB0>', 'clip_range_vf': 'None', 'normalize_advantage': 'True', 'target_kl': 'None', 'lr_schedule': '<function get_schedule_fn.<locals>.<lambda> at 0x00000201267F1120>', 'rollout_buffer': '<stable_baselines3.common.buffers.RolloutBuffer object at 0x000002012677DBA0>', 'policy': 'ActorCriticPolicy(\n  (features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (pi_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (vf_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (mlp_extractor): MlpExtractor(\n    (policy_net): Sequential(\n      (0): Linear(in_features=6, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n    (value_net): Sequential(\n      (0): Linear(in_features=6, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n  )\n  (action_net): Linear(in_features=64, out_features=3, bias=True)\n  (value_net): Linear(in_features=64, out_features=1, bias=True)\n)', '_logger': '<stable_baselines3.common.logger.Logger object at 0x000002012EC4BDC0>'}
+2025-01-20 13:16:20,195 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:16:26,557 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:16:34,028 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:16:40,742 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:16:48,464 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:16:55,479 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:03,272 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:10,199 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:17,100 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:25,187 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:32,130 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:40,406 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:47,303 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:17:55,310 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:01,819 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:09,403 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:16,343 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:23,202 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:31,086 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:37,973 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:45,893 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:18:52,772 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:00,566 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:07,153 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:14,452 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:20,829 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:27,175 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:34,394 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:40,867 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:48,345 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:19:54,939 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:02,175 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:08,550 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:15,866 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:22,317 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:28,762 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:35,968 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:42,348 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:49,665 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:20:56,052 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:03,381 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:09,797 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:16,243 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:23,449 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:29,767 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:36,987 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:43,418 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:50,568 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:21:56,997 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:04,219 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:10,595 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:17,104 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:24,363 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:30,788 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:37,953 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:44,490 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:51,705 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:22:58,266 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:05,523 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:11,940 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:18,438 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:25,696 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:32,096 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:39,342 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:45,939 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:23:53,629 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:00,086 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:07,277 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:13,844 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:20,305 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:27,541 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:33,980 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:41,224 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:47,790 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:24:55,053 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:01,528 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:08,028 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:15,212 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:21,669 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:28,900 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:35,389 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:42,662 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:49,124 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:25:56,357 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:02,757 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:09,182 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:16,456 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:22,888 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:30,106 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:36,510 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:43,794 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:50,293 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:26:57,548 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:03,993 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:10,406 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:17,650 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:24,080 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:31,263 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:37,664 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:44,861 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:47,373 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:47,389 INFO    MainThread:1576 [wandb_run.py:_config_callback():1282] config_cb None None {}
+2025-01-20 13:27:51,342 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:27:58,763 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:05,432 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:12,496 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:20,342 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:27,338 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:35,050 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:42,263 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:50,144 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:28:57,140 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:29:03,965 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:29:12,888 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:29:26,134 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:29:35,081 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:29:43,203 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:29:52,241 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:00,488 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:10,357 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:19,765 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:26,566 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:34,358 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:41,125 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:49,236 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:30:56,144 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:03,633 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:10,240 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:17,672 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:24,741 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:31,529 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:39,110 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:45,633 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:31:53,318 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:32:00,369 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:32:08,082 INFO    MainThread:1576 [sb3.py:save_model():147] Saving model checkpoint to models/6c4ivd4s\model.zip
+2025-01-20 13:32:09,923 WARNING MsgRouterThr:1576 [router.py:message_loop():75] message_loop has been closed
