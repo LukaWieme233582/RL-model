@@ -68,7 +68,7 @@ class OT2Env(gym.Env):
 
 
         distance_to_goal = np.linalg.norm(pipette_position - self.goal_position)
-        reward = -distance_to_goal * 0.1
+        reward = -distance_to_goal
         
         # next we need to check if the if the task has been completed and if the episode should be terminated
         # To do this we need to calculate the distance between the pipette position and the goal position and if it is below a certain threshold, we will consider the task complete. 

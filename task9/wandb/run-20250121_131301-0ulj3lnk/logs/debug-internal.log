@@ -1,0 +1,17 @@
+{"time":"2025-01-21T13:13:02.1107656+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.3","symlink path":"C:\\Users\\Beheerder\\Documents\\GitHub\\RL-model\\task9\\wandb\\run-20250121_131301-0ulj3lnk\\logs\\debug-core.log"}
+{"time":"2025-01-21T13:13:04.5454317+01:00","level":"INFO","msg":"created new stream","id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:04.5454317+01:00","level":"INFO","msg":"stream: started","id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:04.5454317+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:04.5454317+01:00","level":"INFO","msg":"handler: started","stream_id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:04.5454317+01:00","level":"INFO","msg":"sender: started","stream_id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:04.8643619+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-21T13:13:14.1609214+01:00","level":"INFO","msg":"stream: closing","id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:14.1609214+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-21T13:13:14.161552+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-21T13:13:16.8389721+01:00","level":"INFO","msg":"tensorboard: no root directory after 10 seconds, using working directory"}
+{"time":"2025-01-21T13:13:16.8403409+01:00","level":"ERROR","msg":"tensorboard: error creating symlink","target":"C:\\Users\\Beheerder\\Documents\\GitHub\\RL-model\\task9\\runs\\0ulj3lnk\\runs\\0ulj3lnk_0\\events.out.tfevents.1737461586.MSI.11376.0","symlink":"C:\\Users\\Beheerder\\Documents\\GitHub\\RL-model\\task9\\wandb\\run-20250121_131301-0ulj3lnk\\files\\runs\\0ulj3lnk\\runs\\0ulj3lnk_0\\events.out.tfevents.1737461586.MSI.11376.0","error":"symlink C:\\Users\\Beheerder\\Documents\\GitHub\\RL-model\\task9\\runs\\0ulj3lnk\\runs\\0ulj3lnk_0\\events.out.tfevents.1737461586.MSI.11376.0 C:\\Users\\Beheerder\\Documents\\GitHub\\RL-model\\task9\\wandb\\run-20250121_131301-0ulj3lnk\\files\\runs\\0ulj3lnk\\runs\\0ulj3lnk_0\\events.out.tfevents.1737461586.MSI.11376.0: A required privilege is not held by the client."}
+{"time":"2025-01-21T13:13:17.4348113+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-21T13:13:17.6499452+01:00","level":"INFO","msg":"handler: closed","stream_id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:17.6499452+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:17.6499452+01:00","level":"INFO","msg":"sender: closed","stream_id":"0ulj3lnk"}
+{"time":"2025-01-21T13:13:17.6499452+01:00","level":"INFO","msg":"stream: closed","id":"0ulj3lnk"}
